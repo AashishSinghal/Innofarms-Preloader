@@ -15,9 +15,9 @@
 .gear {
     position: relative;
     width: 25vw;
-    top: 20%;
-    left: 35%;
-    animation: spin 7s linear infinite;
+    top: 14.5%;
+    left: 34.8%;
+    animation: spin 10s linear infinite;
 }
 
 .bulb {
@@ -38,7 +38,15 @@
 
 
 @media only screen and (max-width: 415px) {
-
+    
+    .gear {
+        position: relative;
+        width: 25vw;
+        top: 18.5%;
+        left: 35%;
+        animation: spin 10s linear infinite;
+    }
+    
     .bulb {
         position: relative;
         width: 25vw;
@@ -57,10 +65,31 @@
 
 }
 
+
+@media only screen and (max-width: 940px) {
+    .gear {
+        position: relative;
+        width: 25vw;
+        top: 18%;
+        left: 34.8%;
+        animation: spin 10s linear infinite;
+    }
+}
+
+@media only screen and (width : 1024px) and (height: 1366px) {
+    .gear {
+        top: 17.5%;
+    }
+}
+
+
+
+
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
-        transform-origin: 50% 37.5%;
+        transform-origin: 50% 50%;
     }
 
     100% {
