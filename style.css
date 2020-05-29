@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    background-image: url(bg.png);
+    background-repeat: repeat;
+    background-size: 1280px 720px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gear {
+    position: relative;
+    width: 25vw;
+    top: 20%;
+    left: 35%;
+    animation: spin 7s linear infinite;
+}
+
+.bulb {
+    position: relative;
+    width: 25vw;
+    top: 20%;
+    left: 9.5%;
+
+}
+
+.leaf {
+    position: relative;
+    width: 25vw;
+    top: 20%;
+    left: -16%;
+
+}
+
+
+@media only screen and (max-width: 415px) {
+
+    .bulb {
+        position: relative;
+        width: 25vw;
+        top: 20%;
+        left: 9%;
+    
+    }
+    
+    .leaf {
+        position: relative;
+        width: 25vw;
+        top: 20%;
+        left: -17%;
+    
+    }    
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: 50% 37.5%;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
