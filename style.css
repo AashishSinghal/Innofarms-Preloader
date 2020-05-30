@@ -4,12 +4,14 @@
 }
 
 .container {
+    /* display: flex; */
     position: absolute;
     background-image: url(bg.png);
     background-repeat: repeat;
     background-size: 1280px 720px;
     height: 100vh;
     width: 100vw;
+    z-index: 0;
 }
 
 .gear {
@@ -17,7 +19,8 @@
     width: 25vw;
     top: 14.5%;
     left: 34.8%;
-    animation: spin 10s linear infinite;
+    animation: spin 10s linear ease-in;
+    animation-delay: 2s;
 }
 
 .bulb {
@@ -35,6 +38,146 @@
     left: -16%;
 
 }
+
+.letter-f {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: letter-f 5s infinite;
+    animation-direction: normal;
+}
+
+.letter-a {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: letter-a 5s infinite;
+    animation-direction: normal;
+}
+
+.letter-r {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: letter-r 5s infinite;
+    animation-direction: normal;
+}
+
+.letter-m {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: letter-m 5s infinite;
+    animation-direction: normal;
+}
+
+.letter-s {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: letter-s 5s infinite;
+    animation-direction: normal;
+}
+
+
+
+.gear2 {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    animation: spin 10s linear infinite;
+    z-index: 90;
+}
+
+.bulb2 {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    z-index: 100;
+}
+
+.leaf2 {
+    position: relative;
+    width: 25vw;
+    margin: auto;
+}
+
+.wrapper{
+    position: relative;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
+.wrapper div {
+    position: absolute;
+}
+
+@keyframes letter-f {
+    0% {
+        display: none;
+        left: 0px;
+    }
+    100% {
+        display: block;
+        left: 140px;
+    }
+}
+
+@keyframes letter-a {
+    0% {
+        display: none;
+        left: 0px;
+    }
+    100% {
+        display: block;
+        left: 200px;
+    }
+}
+
+
+@keyframes letter-r {
+    0% {
+        display: none;
+        left: 0px;
+    }
+    100% {
+        display: block;
+        left: 265px;
+    }
+}
+
+
+@keyframes letter-m {
+    0% {
+        display: none;
+        left: 0px;
+    }
+    100% {
+        display: block;
+        left: 350px;
+    }
+}
+
+
+@keyframes letter-s {
+    0% {
+        display: none;
+        left: 0px;
+    }
+    100% {
+        display: block;
+        left: 440px;
+    }
+}
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 415px) {
