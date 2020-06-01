@@ -126,12 +126,13 @@
 
 .wrapper{
     position: relative;
-    width: 15vw;
+    width: 16vw;
     height: auto;
-    margin-left: 30vw;
+    margin-left: 42vw;
     /* margin: auto; */
     align-items: center;
     padding-top: 25vh;
+    animation: shift 5s infinite;
 }
 
 .wrapper div {
@@ -291,41 +292,6 @@
 }
 
 
-
-
-
-
-
-
-
-@media only screen and (max-width: 415px) {
-    
-    .gear {
-        position: relative;
-        width: 25vw;
-        top: 18.5%;
-        left: 35%;
-        animation: spin 10s linear infinite;
-    }
-    
-    .bulb {
-        position: relative;
-        width: 25vw;
-        top: 20%;
-        left: 9%;
-    
-    }
-    
-    .leaf {
-        position: relative;
-        width: 25vw;
-        top: 20%;
-        left: -17%;
-    }    
-
-}
-
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -349,4 +315,14 @@
     100% {
       opacity:1;
     }
-  }
+}
+
+@keyframes shift {
+    0% {
+        margin-left: 42vw;
+    }
+
+    100% {
+        margin-left: 35vw;
+    }
+}
