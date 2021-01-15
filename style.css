@@ -1,4 +1,9 @@
-*{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.preloader{
     margin: 0;
     padding: 0;
 }
@@ -6,7 +11,7 @@
 .container {
     /* display: flex; */
     position: absolute;
-    background-image: url(bg.png);
+    background-image: url(./img/fruit-bg2.svg);
     background-repeat: repeat;
     background-size: 1280px 720px;
     height: 100vh;
@@ -305,7 +310,6 @@
 
 .fade-in {
     animation: fadeIn ease 5s infinite;
-
 }
  
 @keyframes fadeIn {
@@ -324,5 +328,36 @@
 
     100% {
         margin-left: 35vw;
+    }
+}
+
+.tag-line {
+    position: absolute;
+    width: 40vw;
+    height: auto;
+    top: 16%;
+    left: 10%;
+    width: 30vw !important;
+    margin: 13vw 0vh 0vh 5vw;
+    animation: tag-line 5s infinite;
+    animation-direction: normal;
+    animation-delay: 0s;
+}
+
+@keyframes tag-line {
+    0% {
+        display: none;
+        left: 0px;
+        opacity: 0;
+    }
+    
+    20%{
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        left: 11vw;
+        opacity: 1;
     }
 }
